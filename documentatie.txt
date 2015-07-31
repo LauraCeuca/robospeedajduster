@@ -1,0 +1,46 @@
+					RoboSpeedAdjuster
+
+Scurta introducere:
+
+	RoboSpeedAdjuster are la baza o masina controlata prin telecomanda bluetooth ce are posibilitatea de a-si adapta singura viteza in functie de diferitele inclinari ale traseului pe care il parcurge.Viteza de deplasare a masinii se modifica in scopul pastrarii unei deplasari uniforme , adica a unei viteze constante de deplasare a vehiculului , acesta remediind diferentele de viteza ce apar datorita fortei de greutate si frecare ce se exercita asupra vehicolului in deplasarea sa .
+
+Observatii experimentale:	 
+
+	Diferentele de viteza devin vizibile ochiului liber in conditii extreme de mediu si avand de a face cu o forta puternica de greutate. Datorita faptului ca acest vehicol avand o masa redusa si o putere redusa a motoarelor, iar conditiile extreme de traseu de care are nevoie fiind greu de recreat , modificarile de viteza pot fi greu de observat. De aceea acest proiect este mai degraba un prototip al unei idei ce ar putea fi mai tarziu implementat in cazut vehiculelor de masa considerabila si in cazurile in care este nevoie de precizie.
+
+Utilitate:
+
+	Modificarile de viteza realizate cu precizie in cazul actiunii unor astfel de forte pot fi de mare folos in cazul in care se doreste estimarea cat mai exacta a unui timp de deplasare al unui vehicul ,acesta avand o miscare constanta . De asemenea, aceasta aplicatie ar putea deveni o aditie de precizie a sistemelor de bord cum ar fi modul 'pilot autmat'.
+
+Principiu de functionare:
+
+	RoboSpeedAdjuster se foloseste de un giroscop pentru a determina unghiul de inclinare al pantei pe care  se afla,o variabila necesara calcularii acceleratiei care se adauga sau se scade din viteza (se adauga la coborare, se scade la urcare) cu care masina merge datorita greutatii acesteia in actiunea fortei gravitationale. 
+
+Piese folosite/Constructie:
+
+	Proiectul are la baza microcontroler-ul Arduino Uno, la care se adauga un driver de motoare ce actioneaza cele 2 motoare DC ce pun in miscare masina . De asmenea, aceasta dispune de un receiver bluetooth ce comunica cu o telecomanda Android pentru a usura controlul miscarilor vehiculului, dar si de un giroscop ce preia datele necesare calculelor ce urmeaza a fi efectuate.
+
+Cod:
+
+	Codul ce sta la baza acestui proiect este alcatuit in mare parte din 3 componente ce asigura functionarea eficienta a fiecarei piese ce il alcatuiesc:
+	Codul pentru deplasarea masinii si control Bluetooth;
+	Codul pentru initializarea si citirea datelor cu ajutorul giroscopului;
+	Calculele ce ii permit masinii sa isi ajusteze viteza in functie de datele primite;
+
+Nota:
+
+	Proiectul RoboSpeedAdjuster nu se afla in stadiul sau final deoarece as dori sa ii mai adaugam diverse facilitati in viitorul apropiat, de altfel si sa ajungem la o aproximare cat mai precisa a calculelor, maximizandu-i astfel prformantele.
+
+Bibliografie:
+
+www.github.com
+www.instructables.com
+
+Realizatori:
+
+	Ceuca Laura
+	Clasa aX-a B, Colegiul National "Horea, Closca si Crisan", Alba Iulia
+
+	Solyom Stefan Felix
+	Clasa aX-a C, Colegiul National "Horea, Closca si Crisan", Alba iulia
+
